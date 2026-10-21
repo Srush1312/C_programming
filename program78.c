@@ -1,0 +1,32 @@
+//input:4
+//output:1 3 5 7
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void Display(int iNo)
+{
+    int icnt=0;
+
+    for(icnt=1;icnt<=iNo;icnt+=2)  //shorthand assigned operator
+    {
+        printf("%d\t",icnt);
+        icnt++;
+    }
+
+    printf("\n");
+
+} 
+
+int main()
+{
+    int ivalue=0;
+
+    printf("Enter the frequency:\n");
+    
+    scanf("&d",&ivalue);
+
+    Display(ivalue);
+
+    return EXIT_SUCCESS;
+}
