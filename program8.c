@@ -1,0 +1,100 @@
+/*
+    step1:Understand the problem statement
+    step2:Write the algorithm
+    step3:Decide the programming language
+    step4:Write the code
+    step:Test the program
+*/
+
+///////////////////////////////////////////////////
+//
+//  step1:Understand the problem statement
+//        user is going to enter any 2 integers   
+//        and we have to perform addition 
+//
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+//
+// step2:   write the algorithm
+/*  
+    START
+        accept first number as No1
+        accept first number as No2
+        create the variable as Ans to store the result
+        perform the addition
+        display the result form Ans
+    END    
+*/
+
+////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+//
+//  step3:Decide the programming language
+//      We select the programming
+//
+////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+//  
+//  step4:Write the code
+//
+////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////
+//
+//  Function Name : Addition
+//  Input : integer,integer
+//  Output : integer
+//  Discription : performace addition
+//  Date : 04/10/2026
+//  Author : Srushti Bhagwan Holkar
+//
+////////////////////////////////////////////////////
+
+int Addition(int iNo1,int iNo2)
+{
+    int iAns=0;
+
+    iAns =iNo1+iNo2;   //Business Logic
+
+    return iAns;
+}
+
+////////////////////////////////////////////////////
+//
+//  Entry point of the application
+//  
+////////////////////////////////////////////////////
+int main()
+{
+    int ivalue1=0,ivalue2=0,iresult=0;
+
+    printf("Enter first number:\n");
+    scanf("%d",&ivalue1);
+
+    printf("Enter second number:\n");
+    scanf("%d",&ivalue2);
+
+    iresult=Addition(ivalue1,ivalue2);
+
+    printf("Addition is:%d\n",iresult);     
+    
+    return 0;
+}
+
+///////////////////////////////////////////////////
+//
+//  step:Test the program
+//  tested cases
+//  input1    input2  output
+//  10          11      21
+//  11           0      11
+//   0          11      11
+//  -9          -9     -18
+// -20          20       0
+// -11         -23     -34
+///////////////////////////////////////////////////
