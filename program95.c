@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    printf("sizeof int:%zu\n",sizeof(int));
+    printf("sizeof char:%zu\n",sizeof(char));
+    printf("sizeof double:%zu\n",sizeof(double));
+    printf("sizeof float:%zu\n",sizeof(float));
+
+    return EXIT_SUCCESS;
+}
