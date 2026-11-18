@@ -1,0 +1,36 @@
+/*
+    input : 4
+    output: -4 -3 -2 -1 0 1 2 3 4
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void Pattern(int iNo)
+{
+    int icnt=0;
+
+    for(icnt=-iNo;icnt<=0;icnt++)    //time complexity O(N)
+    {
+        printf("%d\t",icnt);
+    }
+    for(icnt=1;icnt<=iNo;icnt++)     //time complexity O(N)  (order of n)
+    {
+        printf("%d\t",icnt);
+    }
+    printf("\n");
+}
+
+//Time complexity O(2N)
+
+int main()
+{
+    int ivalue=0;
+
+    printf("Enter the value:\n");
+    scanf("%d",&ivalue);
+
+    Pattern(ivalue);
+
+    return EXIT_SUCCESS;
+}
