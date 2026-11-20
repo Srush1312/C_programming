@@ -1,1 +1,37 @@
+/*
+    Display ASCII table (0 to 255)
+    Use a loop from 0 to 255.
+    Display the character, decimal, hexadecimal and octal values.
+    Use %c, %d, %X and %o format specifiers.
 
+    Decimal  Octal  Hexadecimal  Symbol
+    0        0      0
+    1        1      1
+    2        2      2
+    ...
+    65       101    41           A
+    66       102    42           B
+    ...
+    255      377    FF
+
+*/
+#include <stdio.h>
+
+void DisplayASCII()
+{
+    int i;
+
+    printf("Decimal\tOctal\tHexadecimal\tSymbol\n");
+
+    for (i = 0; i <= 255; i++)
+    {
+        printf("%d\t%o\t%X\t\t%c\n", i, i, i, i);
+    }
+}
+
+int main()
+{
+    DisplayASCII();
+
+    return 0;
+}
