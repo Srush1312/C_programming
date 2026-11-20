@@ -1,0 +1,35 @@
+/*
+    input:"Srushti Bhagwan Holkar"
+    output:2
+*/
+
+#include<stdio.h>
+
+void CountWhite(char *str)
+{
+    int i = 0;
+    int count = 0;
+
+    while(str[i] != '\0')
+    {
+        if(str[i] == ' ')
+        {
+            count++;
+        }
+        i++;
+    }
+
+    printf("Number of white spaces are %d", count);
+}
+
+int main()
+{
+    char arr[20];
+
+    printf("Enter string: ");
+    scanf("%19[^\n]", arr);
+
+    CountWhite(arr);
+
+    return 0;
+}
