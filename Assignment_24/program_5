@@ -1,0 +1,40 @@
+/*
+    Enter string: abcd
+    Modified string is: dcba
+
+    Enter string: abba
+    Modified string is: abba
+*/
+#include <stdio.h>
+#include <string.h>
+
+void StrRevX(char *str)
+{
+    int iStart = 0;
+    int iEnd = strlen(str) - 1;
+    char temp;
+
+    while (iStart < iEnd)
+    {
+        temp = str[iStart];
+        str[iStart] = str[iEnd];
+        str[iEnd] = temp;
+
+        iStart++;
+        iEnd--;
+    }
+}
+
+int main()
+{
+    char arr[20];
+
+    printf("Enter string: ");
+    scanf("%19[^\n]", arr);
+
+    StrRevX(arr);
+
+    printf("Modified string is: %s\n", arr);
+
+    return 0;
+}

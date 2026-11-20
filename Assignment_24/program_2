@@ -1,0 +1,48 @@
+/*
+    Enter string: Marvellous Multi OS
+    Enter the character: M
+    Character frequency is 2
+
+    Enter string: Marvellous Multi OS
+    Enter the character: W
+    Character frequency is 0
+*/
+
+
+#include<stdio.h>
+
+int CountChar(char *str, char ch)
+{
+    int i = 0;
+    int count = 0;
+
+    while(str[i] != '\0')
+    {
+        if(str[i] == ch)
+        {
+            count++;
+        }
+        i++;
+    }
+
+    return count;
+}
+
+int main()
+{
+    char arr[100];
+    char cValue;
+    int iRet = 0;
+
+    printf("Enter string: ");
+    scanf("%99[^\n]", arr);
+
+    printf("Enter the character: ");
+    scanf(" %c", &cValue);
+
+    iRet = CountChar(arr, cValue);
+
+    printf("Character frequency is %d", iRet);
+
+    return 0;
+}
